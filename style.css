@@ -517,9 +517,6 @@ s #footer-right ul {
 
 /* LOGIN PAGE */
 
-#login-wrapper p {
-  font-size: var(--font-size-small);
-}
 #login-wrpper {
   width: 100vw;
   height: 100vh;
@@ -530,18 +527,83 @@ s #footer-right ul {
 }
 #login-card {
   background-color: var(--color-dark-text);
-  color: var(--color-white);
+  color: var(--color-off-white);
   padding: var(--gap-3);
   text-align: center;
   display: flex;
   justify-content: space-between;
-  width: 56rem;
+  width: 48rem;
   max-width: 90vw;
 }
 
 #login-left {
-  width: 60%;
+  width: 58%;
 }
+#login-left h3 {
+  margin-bottom: var(--gap-2);
+}
+.login-logo {
+  display: none;
+}
+
+#login-card a {
+  color: var(--color-brand);
+  text-decoration: none;
+}
+#login-card p {
+  font-size: 0.75rem;
+}
+
+#login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 0.75rem;
+}
+
+input {
+  background-color: #3e3e3e;
+  border: 0;
+  padding: var(--gap-1);
+  margin: 0.25rem 0;
+}
+.button.submit {
+  background-color: var(--color-brand);
+  border-radius: 0.25rem;
+  display: flex;
+  justify-content: center;
+  margin-top: var(--gap-1);
+}
+
 #login-right {
-  width: 35%;
+  width: 38%;
+}
+#login-right img {
+  width: 80%;
+  margin: 0 auto 1rem;
+}
+
+@media (max-width: 1024px) {
+  #login-card {
+    width: 25rem;
+  }
+  #login-left {
+    width: 100%;
+  }
+  #login-right {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #login-card {
+    width: 100%;
+    max-width: 100vw;
+    height: 100vh;
+  }
+  .login-logo {
+    display: block;
+    margin: 0 auto 1rem;
+  }
 }
